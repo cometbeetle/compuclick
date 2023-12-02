@@ -2,7 +2,7 @@
 
 **COMPUCLICK** is an arithmetic-based video game that requires the player to solve equations before time runs out. 
 
-The project was built using JetBrains [IntelliJ IDEA](https://www.jetbrains.com/idea/) in Java version 21. 
+The project was built with Java version 21 using [IntelliJ IDEA](https://www.jetbrains.com/idea/) by JetBrains. 
 
 ![COMPUCLICK Title Screen](https://raw.githubusercontent.com/cometbeetle/compuclick/main/docs/GitHub-image.PNG)
 
