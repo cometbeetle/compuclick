@@ -41,7 +41,7 @@ public class GameWindow extends JPanel {
         addKeyListener(new KeyHandler());
         setFocusable(true);
 
-        // Screen refreshes every 15 ms
+        // Screen refreshes every 15 ms to facilitate animation
         Timer refreshTimer = new Timer(15, new RefreshTimerHandler());
         refreshTimer.start();
 
