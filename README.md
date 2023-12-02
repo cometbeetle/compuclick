@@ -1,1 +1,1 @@
-# compuclick
+# COMPUCLICK
