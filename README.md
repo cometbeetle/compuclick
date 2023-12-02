@@ -2,6 +2,8 @@
 
 **COMPUCLICK** is an arithmetic-based video game that requires the player to solve equations before time runs out. 
 
+![COMPUCLICK Title Screen]([http://url/to/img.png](https://raw.githubusercontent.com/cometbeetle/compuclick/main/docs/GitHub-image.PNG))
+
 ### Instructions
 
 The game is designed to be intuitive to play, and works like this: 
