@@ -58,4 +58,4 @@ The game is designed to be intuitive to play, and works like this:
 
 **COMPUCLICK**
 
-`© Ethan Mentzer, 2023, University of Rochester. All rights reserved.`
+`© Ethan Mentzer, 2023, University of Rochester.`
