@@ -15,6 +15,7 @@ import java.awt.Dimension;
 /**
  * The Main class creates the JFrame in which our game runs.
  */
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,5 +30,6 @@ public class Main {
         frame.add(new GameWindow());
         frame.setVisible(true);
     }
+
 }
 
