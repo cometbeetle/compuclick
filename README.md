@@ -33,7 +33,7 @@ The game is designed to be intuitive to play, and works like this:
     - ***Impossible***
       - Same behavior as hard mode, but the player can only click on the correct answer, and nowhere else on the screen. Clicking any wrong answer or the background will end the game. 
 
-6.	Clickable powerups will appear randomly every 15 to 30 seconds, each lasting 10 seconds. Powerups are cumulative (you can have more than one active a time), and work as follows:
+6.	Clickable **powerups** will appear randomly every 15 to 30 seconds, each **lasting 10 seconds**. Powerups are cumulative (you can have more than one active a time), and work as follows:
     - **The *Slow* powerup (blue):** 
       - The countdown timer moves at half speed, and the answer choices slow their random movements. 
       - The background and timer are tinted blue while this powerup is active.
