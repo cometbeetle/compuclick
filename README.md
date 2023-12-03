@@ -4,7 +4,9 @@
 
 ![COMPUCLICK Title Screen](https://raw.githubusercontent.com/cometbeetle/compuclick/main/docs/GitHub-image.PNG)
 
-The project was built in Java version 21 using [IntelliJ IDEA](https://www.jetbrains.com/idea/) by JetBrains, and can be compiled by importing the project into IntelliJ, or by simply running `javac Main.java` within the `src` folder. Run the compiled code with `java Main`.
+The project was built in Java version 21 using [IntelliJ IDEA](https://www.jetbrains.com/idea/) by JetBrains, and can be compiled by importing the project into IntelliJ, or by simply running `javac Main.java` within the `src` folder. 
+
+Run the compiled source code with `java Main`, or download and double click the [pre-compiled JAR](https://github.com/cometbeetle/compuclick/releases) (Java 21 required).
 
 ### Program Specifications
 
