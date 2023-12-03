@@ -185,7 +185,7 @@ public class GameWindow extends JPanel {
         easier = false;
         score = 0;
         numChoices = 2;
-        eqLevel = 0;
+        eqLevel = 2;
         clickDifficulty = 1;
         timeToAnswer = 2000; // 20 seconds initially
 
@@ -247,32 +247,30 @@ public class GameWindow extends JPanel {
             randomY = rng.nextInt(Params.HEADER_CUTOFF + Params.ANSWER_FONT_SIZE, getHeight() - 50);
 
             // Generate wrong answer
-            int randomWrongAnswer = eq.answer + rng.nextInt(-100, 100);
+            double randomWrongAnswer = eq.answer + rng.nextInt(-100, 100);
 
             // Special handling if it's a hard equation (bypass answer ints and use Strings for everything)
             if (eq.hard) {
-                choices[0].answerAsString = eq.answerAsString;
-                choices[0].calculateHitbox();
-
-                choices[i] = new AnswerChoice(randomWrongAnswer, randomX, randomY, false);
-
                 // Random shift
-                int randShift = rng.nextInt(-15, 16);
+                randomWrongAnswer = eq.answer + rng.nextInt(-15, 16) / 10.0;
+                randomWrongAnswer = Math.round(randomWrongAnswer * 10) / 10.0;
 
                 // Avoid a wrong answer that is actually correct
-                if (randShift == 0)
-                    randShift += 1;
+                if (randomWrongAnswer == eq.answer)
+                    randomWrongAnswer = Math.round((randomWrongAnswer + 0.1) * 10) / 10.0;
 
-                choices[i].answerAsString = String.format("%.1f", Double.parseDouble(eq.answerAsString) + randShift / 10.0);
-                choices[i].calculateHitbox();
-                continue;
+                // Add wrong answer to array
+                choices[i] = new AnswerChoice(randomWrongAnswer, randomX, randomY, false);
+
+                continue; // skip last part below
             }
 
             // Make sure not to add the correct answer as one of the random answers
             if (randomWrongAnswer == eq.answer)
-                choices[i] = new AnswerChoice(randomWrongAnswer + 1, randomX, randomY, false);
-            else
-                choices[i] = new AnswerChoice(randomWrongAnswer, randomX, randomY, false);
+                randomWrongAnswer += 1;
+
+            // Add wrong answer to array
+            choices[i] = new AnswerChoice(randomWrongAnswer, randomX, randomY, false);
         }
     }
 

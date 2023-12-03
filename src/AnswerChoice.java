@@ -19,13 +19,14 @@ import java.util.Random;
 public class AnswerChoice {
 
     // Declare instance variables
-    public int x, y, dx, dy, answer;
+    public int x, y, dx, dy;
+    public double answer;
     public String answerAsString;
     public boolean correct;
     public Rectangle hitBox;
 
     // Constructor
-    public AnswerChoice(int answer, int x, int y, boolean correct) {
+    public AnswerChoice(double answer, int x, int y, boolean correct) {
         this.answer = answer;
         this.x = x;
         this.y = y;
@@ -36,8 +37,16 @@ public class AnswerChoice {
         dx = rng.nextInt(-1, 1);
         dy = rng.nextInt(-1, 1);
 
-        // Convert int to string
-        answerAsString = String.valueOf(answer);
+        // Convert double to array of chars
+        char[] charArray = String.valueOf(answer).toCharArray();
+
+        // Remove decimal information if ends in .0
+        if (charArray[charArray.length - 1] == '0' && charArray[charArray.length - 2] == '.') {
+            char[] fixedArray = new char[charArray.length - 2];
+            System.arraycopy(charArray, 0, fixedArray, 0, fixedArray.length);
+            answerAsString = new String(fixedArray);
+        } else
+            answerAsString = new String(charArray);
 
         calculateHitbox();
     }

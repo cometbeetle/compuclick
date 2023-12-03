@@ -21,7 +21,7 @@ public class Equation {
 
     // Declare instance variables
     public String equation, answerAsString;
-    public int answer;
+    public double answer;
     public boolean hard;
 
     // Constructor
@@ -32,7 +32,7 @@ public class Equation {
 
         // Hard equations are hard-coded
         String[] hardEqs = {"cos(π/3)", "sin(π)", "tan(π)", "f(x) = x^2, f'(2) = ?", "f(x) = ln(x), f'(1) = ?"};
-        String[] hardAns = {"0.5", "0", "0", "4", "0.1"};
+        double[] hardAns = {0.5, 0, 0, 4, 1};
 
         // Generate equation based on desired difficulty level
         char[] operators = {'+', '-', '*'};
@@ -57,10 +57,11 @@ public class Equation {
                 break;
             case 2:
                 // 10% chance of very hard problem
-                if (rng.nextInt(0, 10) == 5) {
+                if (rng.nextInt(0, 10) >= -1) {
                     int randIndex = rng.nextInt(0, hardEqs.length);
                     equation = hardEqs[randIndex];
-                    answerAsString = hardAns[randIndex];
+                    answer = hardAns[randIndex];
+                    answerAsString = String.valueOf(answer);
                     hard = true;
                     return;
                 }
@@ -79,7 +80,7 @@ public class Equation {
     /**
      * calculateAnswer calculates the answer for multiple equation levels via overloading.
      */
-    private int calculateAnswer(int x, char o, int y) {
+    private double calculateAnswer(int x, char o, int y) {
         return switch (o) {
             case '+' -> x + y;
             case '-' -> x - y;
@@ -89,7 +90,7 @@ public class Equation {
     }
 
     // Overloaded method for level 2 equations
-    private int calculateAnswer(int x, char o1, int y, char o2, int z) {
+    private double calculateAnswer(int x, char o1, int y, char o2, int z) {
         String firstCalc = "xy";
         int result1 = 0;
 
