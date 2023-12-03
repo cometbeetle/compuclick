@@ -185,7 +185,7 @@ public class GameWindow extends JPanel {
         easier = false;
         score = 0;
         numChoices = 2;
-        eqLevel = 2;
+        eqLevel = 0;
         clickDifficulty = 1;
         timeToAnswer = 2000; // 20 seconds initially
 

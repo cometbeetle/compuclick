@@ -57,7 +57,7 @@ public class Equation {
                 break;
             case 2:
                 // 10% chance of very hard problem
-                if (rng.nextInt(0, 10) >= -1) {
+                if (rng.nextInt(0, 10) == 5) {
                     int randIndex = rng.nextInt(0, hardEqs.length);
                     equation = hardEqs[randIndex];
                     answer = hardAns[randIndex];
