@@ -8,7 +8,7 @@ The project was built with Java version 21 using [IntelliJ IDEA](https://www.jet
 
 ### Program Specifications
 
-![See here](https://github.com/cometbeetle/compuclick/blob/main/docs/COMPUCLICK%20Program%20Specifications.pdf)
+- [View the PDF Here](https://github.com/cometbeetle/compuclick/blob/main/docs/COMPUCLICK%20Program%20Specifications.pdf)
 
 ### Instructions
 
