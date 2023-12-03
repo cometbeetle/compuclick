@@ -4,7 +4,7 @@
 
 ![COMPUCLICK Title Screen](https://raw.githubusercontent.com/cometbeetle/compuclick/main/docs/GitHub-image.PNG)
 
-The project was built with Java in 21 using [IntelliJ IDEA](https://www.jetbrains.com/idea/) by JetBrains, and can be compiled by importing the project into IntelliJ, or by simply running `javac Main.java` within the `src` folder. 
+The project was built in Java in 21 using [IntelliJ IDEA](https://www.jetbrains.com/idea/) by JetBrains, and can be compiled by importing the project into IntelliJ, or by simply running `javac Main.java` within the `src` folder. 
 
 ### Program Specifications
 
