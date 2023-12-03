@@ -19,7 +19,7 @@ import java.util.Random;
 public class AnswerChoice {
 
     // Declare instance variables
-    public int x, y, dx, dy, answer, fontBound;
+    public int x, y, dx, dy, answer;
     public String answerAsString;
     public boolean correct;
     public Rectangle hitBox;
@@ -49,7 +49,7 @@ public class AnswerChoice {
     public void calculateHitbox() {
         // Use a JPanel to find how big the string will be on screen
         JPanel fontPanel = new JPanel();
-        fontBound = fontPanel.getFontMetrics(Params.ANSWER_FONT).stringWidth(answerAsString);
+        int fontBound = fontPanel.getFontMetrics(Params.ANSWER_FONT).stringWidth(answerAsString);
 
         // Create rectangle based on font characteristics
         hitBox = new Rectangle(x - 5, y - Params.ANSWER_FONT_SIZE, fontBound + 15,
@@ -83,9 +83,7 @@ public class AnswerChoice {
         x += dx;
         y += dy;
 
-        // Re-create rectangle based on font characteristics
-        hitBox = new Rectangle(x - 5, y - Params.ANSWER_FONT_SIZE, fontBound + 15,
-                Params.ANSWER_FONT_SIZE + 10);
+        calculateHitbox();
     }
 
     /**
