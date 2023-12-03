@@ -6,6 +6,10 @@
 
 The project was built with Java version 21 using [IntelliJ IDEA](https://www.jetbrains.com/idea/) by JetBrains. 
 
+### Program Specifications
+
+![See here](https://github.com/cometbeetle/compuclick/blob/main/docs/COMPUCLICK%20Program%20Specifications.pdf)
+
 ### Instructions
 
 The game is designed to be intuitive to play, and works like this: 
