@@ -32,7 +32,7 @@ public class Equation {
 
         // Hard equations are hard-coded
         String[] hardEqs = {"cos(π/3)", "sin(π)", "tan(π)", "f(x) = x^2, f'(2) = ?", "f(x) = ln(x), f'(1) = ?"};
-        double[] hardAns = {0.5, 0, 0, 4, 1};
+        double[] hardAns = {0.5, 0.0, 0.0, 4.0, 1.0};
 
         // Generate equation based on desired difficulty level
         char[] operators = {'+', '-', '*'};
