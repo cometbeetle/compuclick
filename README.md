@@ -4,13 +4,13 @@
 
 ![COMPUCLICK Title Screen](https://raw.githubusercontent.com/cometbeetle/compuclick/main/docs/GitHub-image.PNG)
 
-The project was built in Java version 21 using [IntelliJ IDEA](https://www.jetbrains.com/idea/) by JetBrains, and can be compiled by importing the project into IntelliJ, or by simply running `javac Main.java` within the `src` folder. 
+The project was built in Java version 21 using [IntelliJ IDEA](https://www.jetbrains.com/idea/) by JetBrains, and can be compiled by importing the project into IntelliJ, or by simply running `javac Main.java` within the `src` folder. Run the compiled code with `java Main`.
 
 ### Program Specifications
 
 - [View the PDF Here](https://github.com/cometbeetle/compuclick/blob/main/docs/COMPUCLICK%20Program%20Specifications.pdf)
 
-### Instructions
+### Gameplay Instructions
 
 The game is designed to be intuitive to play, and works like this: 
 
