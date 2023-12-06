@@ -172,7 +172,7 @@ public class HighScore implements ActionListener {
             int highScore = s.nextInt();
 
             // Return as an array
-            return new Object[]{name, highScore, difficulty};
+            return new Object[] {name, highScore, difficulty};
 
         } catch (InputMismatchException err) {
             System.out.println("WARNING: most recent score corrupted (returning blank array...)");
